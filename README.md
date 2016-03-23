@@ -4,6 +4,7 @@
 [![Sauce Test Status](https://saucelabs.com/buildstatus/ng-lightning)](https://saucelabs.com/u/ng-lightning)
 [![npm version](https://badge.fury.io/js/ng-lightning.svg)](https://www.npmjs.com/package/ng-lightning)
 [![Join the chat at https://gitter.im/ng-lightning/ng-lightning](https://badges.gitter.im/ng-lightning/ng-lightning.svg)](https://gitter.im/ng-lightning/ng-lightning?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Coverage Status](https://coveralls.io/repos/github/ng-lightning/ng-lightning/badge.svg?branch=coveralls)](https://coveralls.io/github/ng-lightning/ng-lightning?branch=coveralls)
 
 This library contains native [Angular 2](https://angular.io/) components and directives written from scratch in TypeScript using the [Lightning Design System](https://www.lightningdesignsystem.com/) CSS framework.
 
