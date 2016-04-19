@@ -14,14 +14,24 @@ describe('utility', () => {
   });
 
   it('`isInt`', () => {
-    expect(util.isInt(10)).toBe(true);
-    expect(util.isInt('10')).toBe(true);
-    expect(util.isInt('0')).toBe(true);
+    const { isInt } = util;
 
-    expect(util.isInt(10.5)).toBe(false);
-    expect(util.isInt('10.5')).toBe(false);
-    expect(util.isInt(null)).toBe(false);
-    expect(util.isInt(undefined)).toBe(false);
+    expect(isInt(10)).toBe(true);
+    expect(isInt('10')).toBe(true);
+    expect(isInt(' 1 ')).toBe(true);
+    expect(isInt('0')).toBe(true);
+    expect(isInt(4e2)).toBe(true);
+    expect(isInt('4e2')).toBe(true);
+
+    expect(isInt(10.5)).toBe(false);
+    expect(isInt('10.5')).toBe(false);
+    expect(isInt('  ')).toBe(false);
+    expect(isInt('')).toBe(false);
+    expect(isInt('1a')).toBe(false);
+    expect(isInt('4e2a')).toBe(false);
+    expect(isInt(null)).toBe(false);
+    expect(isInt(undefined)).toBe(false);
+    expect(isInt(NaN)).toBe(false);
   });
 
   it('`isObject`', () => {

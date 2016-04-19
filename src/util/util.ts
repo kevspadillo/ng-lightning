@@ -14,6 +14,8 @@ export function toBoolean(value: any): boolean {
   }
 }
 
+// Check if given value is integer. Cast strings as potential integers as well.
+// See: http://stackoverflow.com/questions/14636536/how-to-check-if-a-variable-is-an-integer-in-javascript
 export function isInt(value: any): boolean {
   if (isNaN(value)) {
     return false;
